@@ -1,0 +1,29 @@
+{
+  "name": "express-gulp-seed",
+  "version": "0.0.1",
+  "description": "Express w/Gulp seed project",
+  "scripts": {
+    "test": "gulp test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rovjuvano/express-gulp-seed.git"
+  },
+  "author": "Robert Juliano <rovjuvano@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rovjuvano/express-gulp-seed/issues"
+  },
+  "homepage": "https://github.com/rovjuvano/express-gulp-seed",
+  "dependencies": {
+    "express": "^4.3.0"
+  },
+  "devDependencies": {
+    "debounce": "0.0.3",
+    "glob-stream": "^3.1.9",
+    "gulp": "^3.6.2",
+    "jasmine-core": "https://github.com/pivotal/jasmine/archive/master.tar.gz",
+    "map-stream": "^0.1.0"
+  }
+}
