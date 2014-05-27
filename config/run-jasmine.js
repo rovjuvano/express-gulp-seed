@@ -4,7 +4,9 @@ var jasmineRequire = require('jasmine-core'),
 	gs = require('glob-stream'),
 	map = require('map-stream');
 
-loadSpecsAndRun(jasmineRequire.boot(jasmineRequire), process.argv.splice(2));
+global.jasmine = jasmineRequire.boot(jasmineRequire);
+require('jasmine-given');
+loadSpecsAndRun(jasmine, process.argv.splice(2));
 
 function loadSpecsAndRun(jasmine, globPattern) {
 	loadSpecs(globPattern, {read: false})
